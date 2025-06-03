@@ -39,7 +39,7 @@ if (A !== B) throw new Error(`${A} does not equal ${B}`);
 </details>
 
 <details>
-<summary>examples (desired)</summary>
+<summary>examples (the general desire)</summary>
 
 ```js
 const result = compare(A, B);
@@ -71,7 +71,19 @@ const result = compare(A, B);
 
 ## Ecosystem today
 
-Currently, there are several libraries in userland that provide this functionality in varying ways. None offer customisability.
+Currently, there are several libraries in userland that provide this functionality in varying ways.
+
+Runtimes (can offer special access):
+
+* [Bun `inspect`](https://bun.sh/docs/api/utils#bun-inspect)
+  * Does not offer special access
+* [Node.js `util.inspect`](https://nodejs.org/api/util.html#utilinspectobject-options) (also used by Deno)
+  * Offers special access (ex `showProxy`)
+
+Libraries (cannot offer special access):
+
+* [jest-diff](https://github.com/jestjs/jest/tree/main/packages/jest-diff)
+* [object-inspect](https://github.com/inspect-js/object-inspect)
 
 ## Prior to stage 2
 
