@@ -82,6 +82,7 @@ Runtimes (can offer special access):
 
 Libraries (cannot offer special access):
 
+* [concordance](https://github.com/concordancejs/concordance)
 * [chai assertion-error](https://github.com/chaijs/assertion-error)
 * [jest-diff](https://github.com/jestjs/jest/tree/main/packages/jest-diff)
 * [object-inspect](https://github.com/inspect-js/object-inspect)
