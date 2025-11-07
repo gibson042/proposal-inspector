@@ -2,6 +2,7 @@
 
 Champions:
 * @JakobJingleheimer
+* @gibson042
 
 Authors:
 * @JakobJingleheimer
